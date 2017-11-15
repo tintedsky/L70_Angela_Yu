@@ -4,9 +4,8 @@ import UIKit
 
 func getLyrics(numberOfBottlesOfBeer: Int) -> String{
     var lyrics = ""
-    for number in (2...numberOfBottlesOfBeer){
-        let nu = numberOfBottlesOfBeer + 2 - number
-        let newLine = "\n\(nu) bottles of beer on the wall, \(nu) bottles of beer. \nTake one down and pass it around, \(nu - 1) bottles of beer on the wall.\n"
+    for number in (2...numberOfBottlesOfBeer).reversed(){
+        let newLine = "\n\(number) bottles of beer on the wall, \(number) bottles of beer. \nTake one down and pass it around, \(number - 1) bottles of beer on the wall.\n"
         lyrics += newLine
     }
     
