@@ -19,4 +19,4 @@ func getLyrics(forThisManyBottlesOfBeer totalNumberOfBeers: Int) -> String{
     return lyrics
 }
 
-print(getLyrics(forThisManyBottlesOfBeer:5))
+print(getLyrics(forThisManyBottlesOfBeer:2))
